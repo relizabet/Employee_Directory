@@ -1,15 +1,18 @@
 export class Employee {
     cell: string;
     email: string;
-    firstName: string;
-    lastName: string;
-    picture: string;
+    name: {
+        first: string;
+        last: string;
+    };
+    picture: {
+        medium: string;
+    };
 
-    constructor(cell: string, email: string, firstName: string, lastName: string, picture: string) {
+    constructor(cell: string, email: string, name: { first: string, last: string }, picture: { medium: string }) {
         this.cell = cell;
         this.email = email;
-        this.firstName = firstName;
-        this.lastName = lastName;
+        this.name = name;
         this.picture = picture;
     }
 

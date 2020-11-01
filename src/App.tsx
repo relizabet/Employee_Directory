@@ -29,6 +29,14 @@ class App extends React.Component<{}, state> {
 
   }
 
+  render(){
+    return (
+      <div className="App">
+        <EmployeeList employees={ this.state.employees } />
+      </div>
+    );
+  };
+
 };
 
 export default App;

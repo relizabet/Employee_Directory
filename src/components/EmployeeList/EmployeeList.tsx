@@ -1,11 +1,18 @@
 import React from "react";
 import EmployeeCard from "../EmployeeCard/EmployeeCard";
-import EmployeeSearch from "../EmployeeSearch/EmployeeSearch";
 
-const EmployeeList = () => {
+type Props = {
+    employees: [];
+};
+
+
+
+const EmployeeList: React.FC<Props> = ({employees}) => {
     return (
-        <div className="container">
-            <h1 className="text-center">Employee Directory</h1>
+        <div className="card-list">
+            {employees ? employees.map((employee) => (
+                <EmployeeCard employee={employee} />
+            )): ""}
         </div>
     );
 }
