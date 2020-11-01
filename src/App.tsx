@@ -1,18 +1,34 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Navbar from "./components/nav"
-import EmpCard from "./components/card"
+import EmployeeList from "./components/EmployeeList/EmployeeList";
+import EmployeeCard from "./components/EmployeeCard/EmployeeCard";
+import { API } from './utils/API';
 
 
-function App() {
-  return (
-    <Router>
-      <div>
-       <Navbar />
-       <EmpCard />
-      </div>
-    </Router>
-  );
-}
+interface state {
+  employees: [];
+};
+
+class App extends React.Component<{}, state> {
+
+  constructor(
+    employees: []
+  ) {
+    super(employees);
+
+    this.state = {
+      employees: []
+    };
+  };
+
+  componentDidMount() {
+
+    API.getEmployees()
+      .then(response => response.data.results)
+      .then(people => this.setState({employees: people}));
+
+  }
+
+};
 
 export default App;

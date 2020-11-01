@@ -2,14 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
-function Navbar() {
+function Navigation() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <Link className="navbar-brand" to="/">
-        Employee Directory
-      </Link>
-      <div>
-        <ul className="navbar-nav">
+        <div className="container">
+      <div className="row justify-content-center">
+        <ul className="navbar-nav text-center">
           <li className="nav-item">
             <Link
               to="/"
@@ -39,9 +37,10 @@ function Navbar() {
             </Link>
           </li>
         </ul>
+        </div>
       </div>
     </nav>
   );
 }
 
-export default Navbar;
+export default Navigation;
