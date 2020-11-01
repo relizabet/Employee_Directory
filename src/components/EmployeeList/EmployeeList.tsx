@@ -1,15 +1,16 @@
 import React from "react";
+import { Employee } from "../../models/Employee";
 import EmployeeCard from "../EmployeeCard/EmployeeCard";
 
 type Props = {
-    employees: [];
+    employees: Employee[];
 };
 
 
 
 const EmployeeList: React.FC<Props> = ({employees}) => {
     return (
-        <div className="card-list">
+        <div className="row">
             {employees ? employees.map((employee) => (
                 <EmployeeCard employee={employee} />
             )): ""}

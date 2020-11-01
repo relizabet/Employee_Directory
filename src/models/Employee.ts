@@ -6,10 +6,10 @@ export class Employee {
         last: string;
     };
     picture: {
-        medium: string;
+        large: string;
     };
 
-    constructor(cell: string, email: string, name: { first: string, last: string }, picture: { medium: string }) {
+    constructor(cell: string, email: string, name: { first: string, last: string }, picture: { large: string }) {
         this.cell = cell;
         this.email = email;
         this.name = name;

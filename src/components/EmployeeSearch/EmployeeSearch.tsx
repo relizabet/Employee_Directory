@@ -1,20 +1,21 @@
 import React from "react";
 
 type Props = {
-    search: string;
+    handleChange: any;
 };
 
 const EmployeeSearch: React.FC<Props> = ({
-    search
+    handleChange
 }) => (
     <div className="container">
         <form className="search">
             <div className="form-group">
                 <label htmlFor="employee-search">Employee Name:</label>
                 <input 
-                  value={search} 
-                  type="text"
-                //   onChange={handleInputChange}
+                  placeholder= "Search Employees"
+                  className="search"
+                  type="search"
+                  onChange={handleChange}
                 />
             </div>
         </form>

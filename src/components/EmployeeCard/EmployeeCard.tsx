@@ -14,7 +14,7 @@ const EmployeeCard: React.FC<Props> = ({employee}) => {
         <div className="col-sm-3">
             <div className="card">
             <div className="card-body">
-                <img alt={employee.name.first} src={employee.picture.medium}></img>
+                <img alt={employee.name.first} src={employee.picture.large}></img>
                 <h5 className="card-title">{employee.name.first} {employee.name.last}</h5>
                 <p className="card-text">{employee.cell}</p>
                 <p className="card-text">{employee.email}</p>
