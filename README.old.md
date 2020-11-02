@@ -1,60 +1,68 @@
-# employee_directory
+# Employee Directory
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Unit 19 React Homework: Employee Directory
 
-## Overview
 
-For this assignment, you'll create a employee directory with React. This assignment will require you to break up your application's UI into components, manage component state, and respond to user events.
+## Description
 
-## User Story
+An application that allows the user to view a list of employees and their 
 
-* As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
+## Table of Contents
 
-## Business Context
+- [Employee Directory](#employee-directory)
+- [Unit 19 React Homework: Employee Directory](#unit-19-react-homework-employee-directory)
+  - [Description](#description)
+  - [Table of Contents](#table-of-contents)
+  - [Usage](#usage)
+  - [Built With](#built-with)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Testing](#testing)
+  - [Contact](#contact)
+  - [Acknowledgements](#acknowledgements)
+  
+## Usage
 
-An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.
+```
+As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
+```
 
-## Acceptance Criteria
+View the deployed heroku application [here](https://relizabet.github.io/employee_directory/).
 
-Given a table of random users, when the user loads the page, a table of employees should render. 
+![Main](public/applicatio.png)
 
-The user should be able to:
+![Filter](public/filter.png)
 
-  * Sort the table by at least one category
+## Built With
 
-  * Filter the users by at least one property.
+- node.js
+- TypeScript
+- Create-React-App
+- axios
+- bootsrap
 
-## Commit Early and Often
+## License
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+[MIT](LICENSE)
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
+## Contributing
 
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
+To contribute to this project create a branch with the feature or correction then submit a pull request.
 
-Follow these guidelines for committing:
+## Testing
 
-* Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
+No tests have been created for this application at this time.
 
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
+## Contact
 
-* Don't commit half done work, for the sake of your collaborators (and your future self!)
+Please direct any questions or concerns directly to me via my email address listed below.
 
-* Test your application before you commit to ensure functionality at every step in the development process
+- Github: [relizabet](https://github.com/relizabet)
+- Email: rachel@relizabeth.com
 
-* We would like you to have well over 200 commits by graduation, so commit early and often!
+## Acknowledgements
 
-* Deploy this site to GitHub Pages using the [Create React App docs for deployment.](https://create-react-app.dev/docs/deployment/#github-pages)
-
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* the URL to the deployed application
-
-* the URL to the Github repository
-
-## Random User
-
-`https://randomuser.me/`
+- Giphy Capture
+- Canva
