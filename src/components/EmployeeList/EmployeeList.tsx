@@ -10,9 +10,9 @@ type Props = {
 
 const EmployeeList: React.FC<Props> = ({employees}) => {
     return (
-        <div className="row">
+        <div className="row row-cols-1 row-cols-md-5 justify-content-center">
             {employees ? employees.map((employee) => (
-                <EmployeeCard employee={employee} />
+                <EmployeeCard key={employee.email} employee={employee} />
             )): ""}
         </div>
     );
